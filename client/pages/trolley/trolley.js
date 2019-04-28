@@ -1,4 +1,4 @@
-// pages/trolley/trolly.js
+// pages/trolley/trolley.js
 Page({
 
   /**
