@@ -42,7 +42,11 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-
+let discountItem = this.data.productList[0]
+this.setData({
+  discountItem:discountItem,
+})
+console.log(this.data.discountItem)
   },
 
   /**

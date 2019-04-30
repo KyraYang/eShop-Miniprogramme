@@ -1,1 +1,63 @@
 /* pages/home/home.wxss */
+.discount-box {
+  position: relative;
+  border-radius: 13px;
+  box-shadow: 0 2rpx 13rpx 5rpx rgba(0, 0, 0, 0.02);
+  height: 326rpx;
+  background-color: #ffffff;
+  margin: 32rpx 52rpx 0;
+}
+.title{
+  position: absolute;
+  align-items: center;
+  display: flex;
+  left: 44rpx;
+  top: 44rpx;
+  width: 300rpx;
+}
+
+.title-text{
+  margin: 0 20rpx;
+  font-size: 28rpx;
+ color: #34373D;
+ font-weight: bold;
+}
+.lines {
+  width: 24rpx;
+  height: 39rpx;
+  
+}
+
+.discount-note {
+  position: absolute;
+  width: 259rpx;
+  height: 188rpx;
+  left: 42rpx;
+  bottom: 0;
+}
+
+.discount-item{
+position: absolute;
+top: 53rpx;
+right: 47rpx;
+width: 241rpx;
+height: 241rpx;
+}
+
+.seperate-bar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 90rpx 0 35rpx; 
+}
+
+.list-lines{
+  width: 21rpx;
+  height: 34rpx;
+}
+
+.list-title-text {
+  margin: 0 20rpx;
+  font-size: 28rpx;
+  font-weight: bold;
+}

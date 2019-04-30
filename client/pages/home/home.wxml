@@ -1,2 +1,20 @@
 <!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
+<image class='bg' src='../../images/bg.png' />
+
+<view class='discount-box'>
+  <!--标题-->
+  <view class='title'>
+    <image class='lines' src='../../images/line-red.png' mode="widthFix" />
+    <view class='title-text'>{{discountItem.name}}</view>
+    <image class='lines' mode="widthFix" src='../../images/line-red.png' />
+  </view>
+  <!--折扣图-->
+  <image class='discount-note' src='../../images/discount.png' mode="aspectFit" />
+  <image src='{{discountItem.image}}' mode="aspectFit" class='discount-item' />
+</view>
+
+<view class='seperate-bar'>
+  <image class='list-lines' src='../../images/line-black.png' mode="widthFix" />
+  <view class='list-title-text'>本季推荐</view>
+  <image class='list-lines' mode="widthFix" src='../../images/line-black.png' />
+</view>
