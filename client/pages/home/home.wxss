@@ -1,13 +1,15 @@
 /* pages/home/home.wxss */
+
 .discount-box {
   position: relative;
   border-radius: 13px;
   box-shadow: 0 2rpx 13rpx 5rpx rgba(0, 0, 0, 0.02);
   height: 326rpx;
-  background-color: #ffffff;
+  background-color: #fff;
   margin: 32rpx 52rpx 0;
 }
-.title{
+
+.title {
   position: absolute;
   align-items: center;
   display: flex;
@@ -16,16 +18,16 @@
   width: 300rpx;
 }
 
-.title-text{
+.title-text {
   margin: 0 20rpx;
   font-size: 28rpx;
- color: #34373D;
- font-weight: bold;
+  color: #34373d;
+  font-weight: bold;
 }
+
 .lines {
   width: 24rpx;
   height: 39rpx;
-  
 }
 
 .discount-note {
@@ -36,22 +38,22 @@
   bottom: 0;
 }
 
-.discount-item{
-position: absolute;
-top: 53rpx;
-right: 47rpx;
-width: 241rpx;
-height: 241rpx;
+.discount-item {
+  position: absolute;
+  top: 53rpx;
+  right: 47rpx;
+  width: 241rpx;
+  height: 241rpx;
 }
 
-.seperate-bar{
+.seperate-bar {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 90rpx 0 35rpx; 
+  margin: 90rpx 0 35rpx;
 }
 
-.list-lines{
+.list-lines {
   width: 21rpx;
   height: 34rpx;
 }
@@ -60,4 +62,63 @@ height: 241rpx;
   margin: 0 20rpx;
   font-size: 28rpx;
   font-weight: bold;
+}
+
+.list-box{
+  display: flex;
+  justify-content: space-around;
+  margin: 0 52rpx 28rpx;
+}
+.list-item-box {
+  box-shadow: 0 2rpx 13rpx 5rpx rgba(0, 0, 0, 0.02);
+  background-color: #fff;
+  border-radius: 13px;
+  flex: 1;
+}
+.list-item-box:first-child{
+  margin-right: 27rpx;
+}
+
+.list-item-img{
+  width: 100%;
+  border-radius: 13rpx 13rpx 0 0;
+}
+
+.list-item-name{
+  margin: 0 21rpx;
+  font-size: 28rpx;
+  color: rgba(29, 29, 38, 0.8);
+  line-height: 40rpx;
+}
+
+.list-item-purchase-bar{
+  display: flex;
+  align-items: center;
+  margin: 9rpx 21rpx 15rpx;
+}
+
+.list-item-money,
+.list-item-add{
+  width: 36rpx;
+  height: 36rpx;
+  line-height: 36rpx;
+  text-align: center;
+  border-radius: 50%;
+  color: #34373D;
+  font-weight: 900;
+  background: #F7E687;
+}
+
+.list-item-money{
+  font-size: 24rpx;
+}
+
+.list-item-add{
+  font-size: 32rpx;
+}
+
+.list-item-price{
+  flex: 1;
+  margin: 0 10rpx;
+  font-size: 28rpx;
 }

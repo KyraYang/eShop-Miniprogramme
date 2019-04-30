@@ -13,8 +13,22 @@
   <image src='{{discountItem.image}}' mode="aspectFit" class='discount-item' />
 </view>
 
+<!--分割线-->
 <view class='seperate-bar'>
   <image class='list-lines' src='../../images/line-black.png' mode="widthFix" />
   <view class='list-title-text'>本季推荐</view>
   <image class='list-lines' mode="widthFix" src='../../images/line-black.png' />
+</view>
+
+<!--商品列表-->
+<view class='list-box' wx:for="{{listItem}}" wx:key='id' wx:if="{{index%2 ===0}}">
+  <navigator class='list-item-box' wx:for="{{[listItem[index],listItem[index+1]]}}" wx:key='id' wx:for-index='itemIndex' wx:for-item='Item'>
+    <image class='list-item-img' src='{{Item.image}}' mode='widthFix' />
+    <view class='list-item-name'>{{Item.name}}</view>
+    <view class='list-item-purchase-bar'>
+      <view class='list-item-money'>¥</view>
+      <view class='list-item-price'>{{Item.price}}</view>
+      <view class='list-item-add'>+</view>
+    </view>
+    </navigator>
 </view>

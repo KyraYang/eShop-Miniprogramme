@@ -43,10 +43,12 @@ Page({
    */
   onLoad: function (options) {
 let discountItem = this.data.productList[0]
+let listItem = this.data.productList.slice(1)
 this.setData({
   discountItem:discountItem,
+  listItem: listItem
 })
-console.log(this.data.discountItem)
+console.log(this.data.listItem)
   },
 
   /**
