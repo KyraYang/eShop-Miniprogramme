@@ -1,0 +1,140 @@
+/* client/pages/detail/detail.wxss */
+.product-wrapper{
+  height: 555rpx;
+  background-color: white;
+  position: relative;
+  margin-bottom: 10rpx;
+  box-shadow: 0 2rpx 13rpx 5rpx rgba(0, 0, 0, 0.02)
+}
+.product-wrapper image{
+position: absolute;
+width: 470rpx;
+height: 400rpx;
+left: 100rpx;
+}
+.product-text{
+  position: absolute;
+  top: 400rpx;
+  width: 100%;
+}
+.product-name{
+  font-size: 38rpx;
+  font-weight: bold;
+  line-height: 53rpx;
+  margin-left: 49rpx;
+  color: rgba(29, 29, 38, 0.8)
+}
+.product-source{
+  font-size: 28rpx;
+  margin-left: 49rpx;
+  color: #8B8B8B;
+  font-weight: bold;
+}
+.product-price{
+  display: flex;
+  flex-flow: row-reverse;
+  margin-right: 30rpx;
+}
+.price-icon{
+ width: 50rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  border-radius: 50%;
+  color: #34373D;
+  font-weight: 900;
+  background: #F7E687;
+}
+.price{
+  text-align: center;
+  font-weight: 900;
+  font-size: 38rpx;
+}
+.service-comment-wrapper{
+  height:330rpx;
+  width: 95%;
+  background-color: white;
+  border-radius: 13rpx;
+  margin: auto;
+  box-shadow: 0 2rpx 13rpx 5rpx rgba(0, 0, 0, 0.02)
+}
+.promise-wrapper{
+position: relative;
+top: 30rpx;
+display: flex;
+flex-flow: column;
+}
+.promise{
+  margin-left: 30rpx;
+  display: flex;
+  flex-flow: row;
+  font-size: 28rpx;
+  color:#34373D;
+  vertical-align: center;
+  line-height: 47rpx;
+}
+.promise image{
+  width: 22rpx;
+  height: 26rpx;
+  margin: 10rpx
+}
+.comment-wrapper{
+  margin: 70rpx 30rpx 0;
+  border-top: 1px solid rgba(151, 151, 151, 0.2)
+}
+.comment-wrapper image{
+  width: 11rpx;
+  height: 18rpx;
+  margin: 15rpx 30rpx 15rpx 10rpx
+}
+.after-comment{
+  margin-top: 40rpx;
+}
+.comment-title{
+  font-size: 30rpx;
+  line-height: 42rpx;
+  font-weight: bold;
+  color: rgba(29, 29, 38, 0.8)
+}
+.comment-number{
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  right: 0;
+  top: 760rpx;
+  font-size: 28rpx;
+color: #8B8B8B;
+font-weight: bold;
+}
+
+.comment{
+  margin-top: 30rpx;
+  font-size: 32rpx;
+  color: rgba(0, 0, 0, 0.3);
+  font-weight: 700;
+}
+.tabBar{
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  height: 100rpx;
+  width: 100%;
+}
+.addTrolley,
+.buyNow{
+width: 375rpx;
+text-align: center;
+vertical-align: center;
+font-size: 30rpx;
+color: #34373D;
+font-weight: 800;
+line-height: 100rpx;
+}
+
+.addTrolley{
+  background-color: rgba(245, 224, 105, 0.6)
+}
+.buyNow{
+  background-color: rgb(245, 224, 105)
+}

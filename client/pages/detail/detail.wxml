@@ -1,0 +1,37 @@
+<!--client/pages/detail/detail.wxml-->
+<view class='product-wrapper'>
+  <image src='{{product.image}}' mode='aspectFit'></image>
+  <view class='product-text'>
+    <view class='product-name'>{{product.name}}</view>
+    <view class='product-source'>{{product.source}}</view>
+    <view class='product-price'>
+      <view class='price'>{{product.price}}</view>
+      <view class='price-icon'>¥</view>
+    </view>
+  </view>
+</view>
+<view class='service-comment-wrapper'>
+  <view class='promise-wrapper'>
+    <view class='promise'>
+      <image src='../../images/check-yellow.png'></image>
+      <view>7天免费退货</view>
+    </view>
+    <view class='promise'>
+      <image src='../../images/check-yellow.png'></image>
+      <view>24小时内发货并配送运费险</view>
+    </view>
+  </view>
+  <view class='comment-wrapper'>
+    <view class='after-comment'>
+      <view class='comment-title'>已买评价</view>
+      <view class='comment-number'>
+        <view>1条</view>
+        <image src='../../images/grey-arrow.png'></image>
+      </view>
+      <view class='comment'>"test"</view>
+    </view>
+  </view>
+</view>
+<view class='tabBar'>
+<view class='addTrolley'>加入购物车</view>
+<view class='buyNow'>立即购买</view></view>
