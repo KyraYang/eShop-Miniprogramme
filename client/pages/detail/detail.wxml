@@ -1,3 +1,4 @@
+
 <!--client/pages/detail/detail.wxml-->
 <view class='product-wrapper'>
   <image src='{{product.image}}' mode='aspectFit'></image>

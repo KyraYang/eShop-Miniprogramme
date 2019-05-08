@@ -1,7 +1,7 @@
 <!--pages/home/home.wxml-->
 <image class='bg' src='../../images/bg.png' />
 
-<view class='discount-box'>
+<view class='discount-box' bindtap='onTap' data-id="{{discountItem.id}}">
   <!--标题-->
   <view class='title'>
     <image class='lines' src='../../images/line-red.png' mode="widthFix" />
@@ -22,7 +22,7 @@
 
 <!--商品列表-->
 <view class='list-box' wx:for="{{listItem}}" wx:key='id' wx:if="{{index%2 ===0}}">
-  <navigator class='list-item-box' wx:for="{{[listItem[index],listItem[index+1]]}}" wx:key='id' wx:for-index='itemIndex' wx:for-item='Item'>
+  <navigator class='list-item-box' wx:for="{{[listItem[index],listItem[index+1]]}}" wx:key='id' wx:for-index='itemIndex' wx:for-item='Item' bindtap='onTap' data-id='{{Item.id}}'>
     <image class='list-item-img' src='{{Item.image}}' mode='widthFix' />
     <view class='list-item-name'>{{Item.name}}</view>
     <view class='list-item-purchase-bar'>

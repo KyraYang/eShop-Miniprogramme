@@ -9,6 +9,16 @@ Page({
   /**
    * Lifecycle function--Called when page load
    */
+onTap:(event)=>{
+  let tapItem = event.currentTarget.dataset.id
+  console.log(tapItem)
+  wx.navigateTo({
+    url: '../detail/detail?id='+tapItem,
+  })
+},
+
+
+
   onLoad: function(options) {
     this.getProductList()
   },
@@ -44,6 +54,7 @@ Page({
       }
     })
   },
+  
   /**
    * Lifecycle function--Called when page is initially rendered
    */
