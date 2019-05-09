@@ -1,2 +1,27 @@
 <!--pages/user/user.wxml-->
-<text>pages/user/user.wxml</text>
+<image class='bg' src='../../images/bg.png' />
+<view class='un-logged' wx:if="{{!userInfo}}">
+  <view class='unlogged-user-wrapper'>
+    <view class='no-avatar'></view>
+    <view class='notice-text'>
+      <view class='un-logged-text'>未登录</view>
+      <view class='logIn-notice'>点击微信登录后可方便购物</view>
+    </view>
+  </view>
+  <button open-type='getUserInfo' bindgetuserinfo='tapToLog' class='logInBtn'>微信登录</button>
+</view>
+<view class='logged' wx:else>
+  <view class='logged-user-wrapper'>
+    <image class='avatar' src='{{userInfo.avatarUrl}}'></image>
+    <view class='user-name'>{{userInfo.nickName}}</view>
+  </view>
+  <view class='split'></view>
+  <view class='option'>
+    <view class='option-text'>收货地址</view>
+    <image class='arrow' src='../../images/grey-arrow.png'></image>
+  </view>
+  <view class='option'>
+    <view class='option-text'>联系客服</view>
+    <image class='arrow' src='../../images/grey-arrow.png'></image>
+  </view>
+</view>

@@ -12,3 +12,47 @@ page{
   height: 144rpx;
   z-index: -1;
 }
+/* pages/user/user.wxss */
+.unlogged-user-wrapper{
+  margin: 50rpx 20rpx 10rpx;
+  background-color: white;
+  box-shadow:  0 2rpx 13rpx 5rpx rgba(0, 0, 0, 0.02);
+  border-radius: 13rpx;
+  display: flex;
+  align-items: center;
+  height: 200rpx;
+}
+.no-avatar{
+  height: 100rpx;
+  width: 100rpx;
+  margin-left: 53rpx;
+  background: rgb(245, 224, 105);
+  border-radius: 50%;
+}
+.notice-text{
+  margin-left: 31rpx
+}
+.un-logged-text{
+  font-weight: bold;
+  line-height: 48rpx;
+  font-size: 34rpx;
+  color: rgba(29, 29, 38, 0.8);
+}
+.logIn-notice{
+  margin-top: 6rpx;
+  line-height: 33rpx;
+  font-size: 24rpx;
+  color: rgb(139, 139, 139)
+}
+.logInBtn{
+margin: 34rpx auto 0;
+width: 250rpx;
+height: 80rpx;
+line-height: 80rpx;
+background: rgb(245, 224, 105);
+border-radius: 10rpx;
+font-size: 30rpx;
+text-align: center;
+color: rgb(52, 55, 61);
+font-weight: bold;
+}

@@ -1,1 +1,53 @@
-/* pages/user/user.wxss */
+.logged{
+   margin: 50rpx 20rpx 10rpx;
+  background-color: white;
+  box-shadow:  0 2rpx 13rpx 5rpx rgba(0, 0, 0, 0.02);
+  border-radius: 13rpx;
+}
+.logged-user-wrapper{
+  display: flex;
+  align-items: center;
+  height: 200rpx;
+}
+.avatar{
+  flex-shrink: 0;
+  height: 100rpx;
+  width: 100rpx;
+  margin-left: 53rpx;
+  background: rgb(245, 224, 105);
+  border-radius: 50%;
+}
+.user-name{
+  flex: 1;
+  margin: 0 31rpx;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.split{
+  height: 8rpx;
+  background: #F9F9F9;
+}
+
+.option{
+  display: flex;
+  margin-left: 46rpx;
+  align-items: center;
+  margin-right: 27rpx;
+  height: 128rpx;
+  border-bottom: 1px solid rgba(151, 151, 151, 0.2);
+}
+.option:last-child{
+  border-bottom: none
+}
+
+.option-text{
+flex: 1;
+font-size: 30rpx;
+color: rgba(29, 29, 38, 0.8)
+}
+.arrow{
+  width: 11rpx;
+  height: 18rpx;
+}
