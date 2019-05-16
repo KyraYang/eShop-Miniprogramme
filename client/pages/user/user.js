@@ -1,6 +1,7 @@
 // pages/user/user.js
 const qcloud = require('../../vendor/wafer2-client-sdk/index.js')
 const config = require('../../config.js')
+const app = getApp()
 Page({
   /**
    * Page initial data
@@ -10,46 +11,31 @@ Page({
   },
 
   tapToLog() {
-    qcloud.login({
-      success: result => {
-        console.log('success')
-        console.log(result)
-        wx.setStorageSync('userInfo', result)
-        this.setData({
-          userInfo: result
-        })
-      },
-      fail: result => {
-        console.log('fail')
-        console.log(result)
-      }
+app.login({
+  success:({userInfo}) =>{
+    wx.setStorageSync('userInfo', userInfo)
+    this.setData({
+      userInfo: userInfo
     })
+  }
+})
   },
-
+  
+ 
 
   /**
    * Lifecycle function--Called when page load
    */
   onLoad: function(options) {
     console.log('onLoad')
-    wx.getSetting({
-      success: result=>{
-        if(result.authSetting['scope.userInfo']){
-          let userInfo = wx.getStorageSync('userInfo')
-          if (userInfo) {
-            this.setData({
-              userInfo: userInfo
-            })
-          }
-        }else{
-          wx.setStorageSync('userInfo', NaN)
-          this.setData({
-            userInfo: NaN
-          })
-        }
+    app.checkUserInfo({
+      success:({userInfo}) =>{
+        this.setData({
+          userInfo: userInfo
+        })
       }
     })
-    
+
   },
 
   /**
@@ -62,7 +48,15 @@ Page({
   /**
    * Lifecycle function--Called when page show
    */
-  onShow: function() {},
+  onShow: function() {
+    app.checkUserInfo({
+      success: ({ userInfo }) => {
+        this.setData({
+          userInfo: userInfo
+        })
+      }
+    })
+  },
 
   /**
    * Lifecycle function--Called when page hide

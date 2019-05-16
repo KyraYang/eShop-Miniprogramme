@@ -1,4 +1,5 @@
 // pages/trolley/trolley.js
+const app = getApp()
 Page({
 
   /**
@@ -7,12 +8,27 @@ Page({
   data: {
 
   },
-
+  tapToLog() {
+    app.login({
+      success: ({ userInfo }) => {
+        wx.setStorageSync('userInfo', userInfo)
+        this.setData({
+          userInfo: userInfo
+        })
+      }
+    })
+  },
   /**
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-
+    app.checkUserInfo({
+      success: ({ userInfo }) => {
+        this.setData({
+          userInfo: userInfo
+        })
+      }
+    })
   },
 
   /**
@@ -26,7 +42,13 @@ Page({
    * Lifecycle function--Called when page show
    */
   onShow: function () {
-
+    app.checkUserInfo({
+      success: ({ userInfo }) => {
+        this.setData({
+          userInfo: userInfo
+        })
+      }
+    })
   },
 
   /**
